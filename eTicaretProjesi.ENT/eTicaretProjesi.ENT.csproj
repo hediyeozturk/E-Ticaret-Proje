@@ -74,11 +74,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IdentityModel\AppRole.cs" />
+    <Compile Include="IdentityModel\AppUser.cs" />
+    <Compile Include="Model\KategoriAlt.cs" />
+    <Compile Include="Model\Kategoriler.cs" />
     <Compile Include="Model\Urunler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="IdentityModel\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>
