@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTicaretProjesi", "eTicaretProjesi\eTicaretProjesi.csproj", "{FDF49A79-D340-4E6B-804F-7E5CD64CB425}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTicaretProjesi.Web", "eTicaretProjesi\eTicaretProjesi.Web.csproj", "{FDF49A79-D340-4E6B-804F-7E5CD64CB425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTicaretProjesi.DAL", "eTicaretProjesi.DAL\eTicaretProjesi.DAL.csproj", "{36B58E82-33CB-4E54-9F65-3BE1E970F23B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTicaretProjesi.ENT", "eTicaretProjesi.ENT\eTicaretProjesi.ENT.csproj", "{732F458C-D85D-4D34-9E90-94FC35ABCFDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTicaretProjesi.BL", "eTicaretProjesi.BL\eTicaretProjesi.BL.csproj", "{2C92C05B-C2D9-4257-A70F-CBE9A7C62725}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{FDF49A79-D340-4E6B-804F-7E5CD64CB425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDF49A79-D340-4E6B-804F-7E5CD64CB425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDF49A79-D340-4E6B-804F-7E5CD64CB425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B58E82-33CB-4E54-9F65-3BE1E970F23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B58E82-33CB-4E54-9F65-3BE1E970F23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B58E82-33CB-4E54-9F65-3BE1E970F23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B58E82-33CB-4E54-9F65-3BE1E970F23B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{732F458C-D85D-4D34-9E90-94FC35ABCFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732F458C-D85D-4D34-9E90-94FC35ABCFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732F458C-D85D-4D34-9E90-94FC35ABCFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732F458C-D85D-4D34-9E90-94FC35ABCFDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C92C05B-C2D9-4257-A70F-CBE9A7C62725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C92C05B-C2D9-4257-A70F-CBE9A7C62725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C92C05B-C2D9-4257-A70F-CBE9A7C62725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C92C05B-C2D9-4257-A70F-CBE9A7C62725}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
