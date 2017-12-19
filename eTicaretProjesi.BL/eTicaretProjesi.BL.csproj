@@ -80,5 +80,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eTicaretProjesi.DAL\eTicaretProjesi.DAL.csproj">
+      <Project>{36b58e82-33cb-4e54-9f65-3be1e970f23b}</Project>
+      <Name>eTicaretProjesi.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTicaretProjesi.ENT\eTicaretProjesi.ENT.csproj">
+      <Project>{732f458c-d85d-4d34-9e90-94fc35abcfdc}</Project>
+      <Name>eTicaretProjesi.ENT</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -74,11 +74,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201712191108495_ilk.cs" />
+    <Compile Include="Migrations\201712191108495_ilk.Designer.cs">
+      <DependentUpon>201712191108495_ilk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eTicaretProjesi.ENT\eTicaretProjesi.ENT.csproj">
+      <Project>{732F458C-D85D-4D34-9E90-94FC35ABCFDC}</Project>
+      <Name>eTicaretProjesi.ENT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712191108495_ilk.resx">
+      <DependentUpon>201712191108495_ilk.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

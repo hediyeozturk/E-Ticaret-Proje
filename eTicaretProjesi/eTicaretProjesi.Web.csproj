@@ -278,6 +278,16 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eTicaretProjesi.BL\eTicaretProjesi.BL.csproj">
+      <Project>{2c92c05b-c2d9-4257-a70f-cbe9a7c62725}</Project>
+      <Name>eTicaretProjesi.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTicaretProjesi.ENT\eTicaretProjesi.ENT.csproj">
+      <Project>{732f458c-d85d-4d34-9e90-94fc35abcfdc}</Project>
+      <Name>eTicaretProjesi.ENT</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
