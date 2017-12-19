@@ -14,8 +14,11 @@ namespace eTicaretProjesi.ENT.IdentityModel
         [StringLength(25)]
         public string Ad { get; set; }
         [StringLength(35)]
+        public string Soyad { get; set; }
+        [StringLength(35)]
         public string KullaniciAd { get; set; }
         [Column(TypeName = "smalldatetime")]
         public DateTime RegisterDate { get; set; } = DateTime.Now;
+        public string ActivationCode { get; set; }
     }
 }
