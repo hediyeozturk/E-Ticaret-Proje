@@ -14,9 +14,9 @@ namespace PT.Web.MVC.App_Start
 
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
-                //AuthenticationType = "ApplicationCookie",
-                //LoginPath = new PathString("/Account/Login")
-                
+                AuthenticationType = "ApplicationCookie",
+                LoginPath = new PathString("/Hesap/Login")
+
             });
         }
     }

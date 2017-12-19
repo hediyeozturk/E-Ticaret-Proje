@@ -42,7 +42,7 @@ namespace eTicaretProjesi.ENT.ViewModel
         public string YeniSifre { get; set; }
         [DataType(DataType.Password)]
         [Display(Name = "Şifre Tekrar")]
-        [Compare("NewPassword", ErrorMessage = "Şifreler uyuşmuyor")]
+        [Compare("YeniSifre", ErrorMessage = "Şifreler uyuşmuyor")]
         [StringLength(100, MinimumLength = 5, ErrorMessage = "Şifreniz en az 5 karakter olmalıdır!")]
         public string SifreTekrar { get; set; }
     }

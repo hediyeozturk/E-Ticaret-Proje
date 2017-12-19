@@ -7,12 +7,10 @@ namespace eTicaretProjesi.DAL.Migrations
     {
         public override void Up()
         {
-            AddColumn("dbo.AspNetUsers", "Soyad", c => c.String(maxLength: 35));
         }
         
         public override void Down()
         {
-            DropColumn("dbo.AspNetUsers", "Soyad");
         }
     }
 }

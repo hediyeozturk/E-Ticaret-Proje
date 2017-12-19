@@ -43,8 +43,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="agile-login">
                 <ul>
-                    <li><a href="registered.html"> Hesap Oluştur </a></li>
-                    <li><a href="login.html">Giriş</a></li>
+                    @if (HttpContext.Current.User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            <a href="@Url.Action("Profil", "Hesap")">Profil</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Logout", "Hesap")">Çıkış Yap</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li><a href="/Hesap/Uyelik"> Hesap Oluştur </a></li>
+                        <li><a href="/Hesap/Login">Giriş</a></li>
+                    }
+                    @if (HttpContext.Current.User.IsInRole("Admin"))
+                    {
+                        <li><a href="/Islemler/UrunEkle">Urun İşlemleri</a></li>
+                    }
                     <li><a href="contact.html">Yardım</a></li>
 
                 </ul>

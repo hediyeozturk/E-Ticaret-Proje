@@ -1,0 +1,66 @@
+﻿@model eTicaretProjesi.ENT.ViewModel.ProfilePasswordViewModel
+
+@{
+    ViewBag.Title = "Profil";
+    Layout = "~/Views/Shared/_LayoutPageMain.cshtml";
+}
+
+<h2>Profil</h2>
+
+<h2 class="text-primary">@Model.ProfileModel.Ad @Model.ProfileModel.Soyad</h2>
+@Html.ValidationSummary()
+<h2 class="text-info">@ViewBag.sonuc</h2>
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm("Profil", "Hesap", FormMethod.Post))
+            {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.LabelFor(x => x.ProfileModel.KullaniciAd)
+                @Html.TextBoxFor(x => x.ProfileModel.KullaniciAd, new { @class = "form-control", placeholder = "Kullanıcı Adı", @readonly = true })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.ProfileModel.Ad)
+                @Html.TextBoxFor(x => x.ProfileModel.Ad, new { @class = "form-control", placeholder = "Ad" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.ProfileModel.Soyad)
+                @Html.TextBoxFor(x => x.ProfileModel.Soyad, new { @class = "form-control", placeholder = "Soyad" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.ProfileModel.Email)
+                @Html.TextBoxFor(x => x.ProfileModel.Email, new { @class = "form-control", placeholder = "E-Mail" })
+            </div>
+            @Html.HiddenFor(x => x.ProfileModel.Id)
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="submit" value="Profili Güncelle" class="btn btn-success btn-block" />
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-md-6">
+        @using (Html.BeginForm("UpdatePassword", "Hesap", FormMethod.Post))
+            {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.LabelFor(x => x.PasswordModel.EskiSifre)
+                @Html.TextBoxFor(x => x.PasswordModel.EskiSifre, new { @class = "form-control", type = "password" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.PasswordModel.YeniSifre)
+                @Html.TextBoxFor(x => x.PasswordModel.YeniSifre, new { @class = "form-control", type = "password" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.PasswordModel.SifreTekrar)
+                @Html.TextBoxFor(x => x.PasswordModel.SifreTekrar, new { @class = "form-control", type = "password" })
+            </div>
+            @Html.HiddenFor(x => x.ProfileModel.Id)
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="submit" value="Şifre Değiştir" class="btn btn-primary btn-block btn-lg" />
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -263,6 +263,7 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\HesapController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IslemlerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -275,6 +276,10 @@
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\Hesap\Uyelik.cshtml" />
+    <Content Include="Views\Hesap\Login.cshtml" />
+    <Content Include="Views\Islemler\UrunEkle.cshtml" />
+    <Content Include="Views\Hesap\RecoverPassword.cshtml" />
+    <Content Include="Views\Hesap\Profil.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
