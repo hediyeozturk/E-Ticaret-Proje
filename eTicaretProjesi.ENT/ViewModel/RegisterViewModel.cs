@@ -31,7 +31,7 @@ namespace eTicaretProjesi.ENT.ViewModel
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Şifre Tekrar")]
-        [Compare("Password", ErrorMessage = "Şifreler uyuşmuyor")]
+        [Compare("Sifre", ErrorMessage = "Şifreler uyuşmuyor")]
         public string SifreOnay { get; set; }
     }
 }
