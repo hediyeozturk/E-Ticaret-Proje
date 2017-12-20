@@ -77,11 +77,11 @@ namespace eTicaretProjesi.Controllers
                         Kime = user.Email,
                         Konu = "Personel Yönetimi - Aktivasyon",
                         Mesaj =
-                            $"Merhaba {user.Ad} {user.Soyad} <br/>Hesabınızı aktifleştirmek için <a href='{siteUrl}/Account/Activation?code={activationCode}'>Aktivasyon Kodu</a>"
+                            $"Merhaba {user.Ad} {user.Soyad} <br/>Hesabınızı aktifleştirmek için <a href='{siteUrl}/Hesap/Activation?code={activationCode}'>Aktivasyon Kodu</a>"
                     });
                 }
 
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login", "Hesap");
             }
             else
             {
@@ -243,7 +243,7 @@ namespace eTicaretProjesi.Controllers
                         Kime = user.Email,
                         Konu = "Personel Yönetimi - Aktivasyon",
                         Mesaj =
-                                $"Merhaba {user.Ad} {user.Soyad} <br/>Email adresinizi <b>değiştirdiğiniz</b> için hesabınızı tekrar aktif etmelisiniz. <a href='{siteUrl}/Account/Activation?code={user.ActivationCode}'>Aktivasyon Kodu</a>"
+                                $"Merhaba {user.Ad} {user.Soyad} <br/>Email adresinizi <b>değiştirdiğiniz</b> için hesabınızı tekrar aktif etmelisiniz. <a href='{siteUrl}/Hesap/Activation?code={user.ActivationCode}'>Aktivasyon Kodu</a>"
                     });
                 }
                 await userStore.UpdateAsync(user);
