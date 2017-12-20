@@ -77,7 +77,7 @@ namespace eTicaretProjesi.Controllers
                         Kime = user.Email,
                         Konu = "Personel Yönetimi - Aktivasyon",
                         Mesaj =
-                            $"Merhaba {user.Ad} {user.Soyad} <br/>Hesabınızı aktifleştirmek için <a href='{siteUrl}/Hesap/Activation?code={activationCode}'>Aktivasyon Kodu</a>"
+                            $"Merhaba {user.Ad} {user.Soyad} <br/>Hesabınızı aktifleştirmek için <a href='{siteUrl}/Hesap/Activation?code={activationCode}'>Aktivasyon Kodu : {activationCode}</a>"
                     });
                 }
 
