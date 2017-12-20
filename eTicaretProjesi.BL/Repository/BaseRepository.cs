@@ -23,6 +23,18 @@ namespace eTicaretProjesi.BL.Repository
                 throw ex;
             }
         }
+        public virtual IQueryable<T> GenelListele()
+        {
+            try
+            {
+                dbContext = new MyContext();
+                return dbContext.Set<T>().AsQueryable();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         public virtual T IDyeGoreBul(TId id)
         {

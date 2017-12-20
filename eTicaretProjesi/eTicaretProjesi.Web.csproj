@@ -286,6 +286,7 @@
     <Content Include="Views\Islemler\KategoriListele.cshtml" />
     <Content Include="Views\Islemler\KategoriGuncelle.cshtml" />
     <Content Include="Views\Islemler\KategoriDetay.cshtml" />
+    <Content Include="Views\Islemler\AltKategoriEkle.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

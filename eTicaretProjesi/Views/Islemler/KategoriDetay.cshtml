@@ -19,9 +19,15 @@
             @Html.DisplayFor(model => model.Kategoriler.KategoriAD)
         </dd>
 
+        <dt>
+            Alt Kategoriler
+        </dt>
+        <dd>
+            @Html.DropDownListFor(model => model.AltK, (List<SelectListItem>)ViewBag.AltKDetay, new { @class = "form-control" })
+        </dd>
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Güncelle", "KategoriGuncelle", new {  id = Model.KategoriID }) |
+    @Html.ActionLink("Güncelle", "KategoriGuncelle", new { id = Model.KategoriID }) |
     @Html.ActionLink("Listeye Geri Dön", "KategoriListele")
 </p>

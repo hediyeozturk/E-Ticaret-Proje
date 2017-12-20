@@ -11,6 +11,6 @@ namespace eTicaretProjesi.BL.Repository
 
     public class KategoriRepo : BaseRepository<Kategoriler, int> { }
 
-    public class AltKategoriRepo :BaseRepository<AltKategoriRepo, int> { }
+    public class AltKategoriRepo :BaseRepository<KategoriAlt, int> { }
 
 }
