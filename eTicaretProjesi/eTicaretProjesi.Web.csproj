@@ -280,6 +280,7 @@
     <Content Include="Views\Islemler\UrunEkle.cshtml" />
     <Content Include="Views\Hesap\RecoverPassword.cshtml" />
     <Content Include="Views\Hesap\Profil.cshtml" />
+    <Content Include="Views\Hesap\Activation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
