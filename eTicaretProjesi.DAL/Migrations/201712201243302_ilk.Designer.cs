@@ -13,7 +13,7 @@ namespace eTicaretProjesi.DAL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201712200948145_ilk"; }
+            get { return "201712201243302_ilk"; }
         }
         
         string IMigrationMetadata.Source

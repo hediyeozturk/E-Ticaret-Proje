@@ -1,0 +1,34 @@
+﻿@model eTicaretProjesi.ENT.ViewModel.KategorilerViewModel.KategoriViewModel
+
+@{
+    ViewBag.Title = "KategoriListele";
+    Layout = "~/Views/Shared/_LayoutPageMain.cshtml";
+}
+
+<h2>KategoriListele</h2>
+
+<p>
+    @Html.ActionLink("Yeni Kategori Ekle", "KategoriEkle")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KategoriAd)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.KategoriList) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KategoriAD)
+        </td>
+        <td>
+            @Html.ActionLink("Güncelle", "KategoriGuncelle", new { id=item.KategoriID }) |
+            @Html.ActionLink("Detay", "KategoriDetay", new {  id=item.KategoriID }) |
+            @Html.ActionLink("Sil", "KategoriSil", new {  id=item.KategoriID })
+        </td>
+    </tr>
+}
+
+</table>

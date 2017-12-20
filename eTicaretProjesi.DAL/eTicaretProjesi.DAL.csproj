@@ -74,9 +74,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201712200948145_ilk.cs" />
-    <Compile Include="Migrations\201712200948145_ilk.Designer.cs">
-      <DependentUpon>201712200948145_ilk.cs</DependentUpon>
+    <Compile Include="Migrations\201712201243302_ilk.cs" />
+    <Compile Include="Migrations\201712201243302_ilk.Designer.cs">
+      <DependentUpon>201712201243302_ilk.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
@@ -93,8 +93,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712200948145_ilk.resx">
-      <DependentUpon>201712200948145_ilk.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712201243302_ilk.resx">
+      <DependentUpon>201712201243302_ilk.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

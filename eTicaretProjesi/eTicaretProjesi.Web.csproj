@@ -24,6 +24,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -281,6 +282,10 @@
     <Content Include="Views\Hesap\RecoverPassword.cshtml" />
     <Content Include="Views\Hesap\Profil.cshtml" />
     <Content Include="Views\Hesap\Activation.cshtml" />
+    <Content Include="Views\Islemler\KategoriEkle.cshtml" />
+    <Content Include="Views\Islemler\KategoriListele.cshtml" />
+    <Content Include="Views\Islemler\KategoriGuncelle.cshtml" />
+    <Content Include="Views\Islemler\KategoriDetay.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
