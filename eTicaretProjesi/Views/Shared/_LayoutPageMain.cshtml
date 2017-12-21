@@ -16,7 +16,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="../../Content/font-awesome.css" rel="stylesheet" />
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="../../Scripts/jquery-3.2.1.min.js"></script>
+    
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
     <!-- //js -->
     <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -34,7 +35,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- start-smoth-scrolling -->
 </head>
 
-<body>
+< >
+<body ng-app="kategoriApp" >
     <!-- header -->
     <div class="agileits_header">
         <div class="container">
@@ -114,9 +116,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs" ng-controller="kategoriController"  >
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html" class="act">Home</a></li>
+                        <!-- Mega Menu -->
+                        <li class="dropdown" ng-repeat="item in klist">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{item.KategoriAD}}<b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-column columns-3">
+                                <div class="row">
+                                    <div class="multi-gd-img">
+                                        <ul class="multi-column-dropdown" ng-repeat="item2 in item.altKategori">
+                                            <h6>Tüm Ürünler</h6>
+                                            <li ><a href="groceries.html">{{item2.AltKategoriAD}}</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </ul>
+                        </li>
                         <!-- Mega Menu -->
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Banyo<b class="caret"></b></a>
@@ -301,7 +318,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- //footer -->
     <!-- Bootstrap Core JavaScript -->
-    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
     <!-- top-header and slider -->
     <!-- here stars scrolling icon -->
     <script type="text/javascript">
@@ -345,5 +364,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     </script>
     <!-- //main slider-banner -->
+    <script>
+        var app = angular.module('kategoriApp', [])
+        app.controller('kategoriController', ['$scope', '$http', function ($scope, $http) {
+            $scope.klist = [];
+            $http.get('/Urun/KategoriGetir').then(function (response) {
+                $scope.klist = response.data;
+            });
+        }]);
+
+    </script>
 </body>
 </html>

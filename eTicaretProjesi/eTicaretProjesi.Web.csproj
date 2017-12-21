@@ -235,6 +235,8 @@
     <Content Include="js\responsiveslides.min.js" />
     <Content Include="js\skdslider.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -245,6 +247,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
@@ -265,6 +268,7 @@
     <Compile Include="Controllers\HesapController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IslemlerController.cs" />
+    <Compile Include="Controllers\UrunController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -297,6 +301,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Urun\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\eTicaretProjesi.BL\eTicaretProjesi.BL.csproj">

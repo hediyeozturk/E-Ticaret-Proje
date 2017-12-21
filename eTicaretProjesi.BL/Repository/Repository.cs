@@ -9,8 +9,14 @@ namespace eTicaretProjesi.BL.Repository
 {
     public class UrunlerRepo:BaseRepository<Urunler, int> { }
 
-    public class KategoriRepo : BaseRepository<Kategoriler, int> { }
-
+    public class KategoriRepo : BaseRepository<Kategoriler, int>
+    {
+        public List<KategoriAlt> AltKategoriList(int KatID)
+        {
+            return dbContext.KategoriAlt.Where(x=>x.KategoriID==KatID).ToList();
+        }
+    }
     public class AltKategoriRepo :BaseRepository<KategoriAlt, int> { }
+
 
 }

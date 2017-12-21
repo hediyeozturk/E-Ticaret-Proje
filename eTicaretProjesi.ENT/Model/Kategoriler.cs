@@ -15,5 +15,8 @@ namespace eTicaretProjesi.ENT.Model
         public int KategoriID { get; set; }
         [Required(ErrorMessage = "Kategori ad girmek zorunludur")]
         public string KategoriAD { get; set; }
+
+        public virtual List<KategoriAlt> AltKategori { get; set; } = new List<KategoriAlt>();
+
     }
 }
