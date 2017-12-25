@@ -283,7 +283,6 @@
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\Hesap\Uyelik.cshtml" />
     <Content Include="Views\Hesap\Login.cshtml" />
-    <Content Include="Views\Islemler\UrunEkle.cshtml" />
     <Content Include="Views\Hesap\RecoverPassword.cshtml" />
     <Content Include="Views\Hesap\Profil.cshtml" />
     <Content Include="Views\Hesap\Activation.cshtml" />
@@ -293,8 +292,8 @@
     <Content Include="Views\Islemler\KategoriDetay.cshtml" />
     <Content Include="Views\Islemler\AltKategoriEkle.cshtml" />
     <Content Include="Views\Shared\_LayoutPageMain.cshtml" />
-    <Content Include="Views\Islemler\UrunListeleex.cshtml" />
     <Content Include="Views\Islemler\UrunListele.cshtml" />
+    <Content Include="Views\Islemler\UrunEkle.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
