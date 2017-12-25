@@ -295,6 +295,7 @@
     <Content Include="Views\Shared\_LayoutPageMain.cshtml" />
     <Content Include="Views\Islemler\UrunListeleex.cshtml" />
     <Content Include="Views\Islemler\UrunListele.cshtml" />
+    <Content Include="Views\Urun\Urunler.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -305,7 +306,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Urun\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\eTicaretProjesi.BL\eTicaretProjesi.BL.csproj">
