@@ -1,5 +1,6 @@
 ﻿using eTicaretProjesi.BL.Repository;
 using eTicaretProjesi.ENT.Model;
+using eTicaretProjesi.ENT.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,10 @@ using static eTicaretProjesi.ENT.ViewModel.KategorilerViewModel;
 
 namespace eTicaretProjesi.Controllers
 {
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     public class IslemlerController : Controller
     {
+        UrunlerRepo ur = new UrunlerRepo();
         KategoriRepo kr = new KategoriRepo();
         // GET: Islemler
         public ActionResult KategoriEkle()
@@ -60,7 +62,7 @@ namespace eTicaretProjesi.Controllers
         {
             model.Kategoriler = kr.IDyeGoreBul(id);
             var AltKategoriler = new List<SelectListItem>();
-            akr.GenelListele().Where(z=>z.KategoriID==id).ToList().ForEach(x => AltKategoriler.Add(new SelectListItem
+            akr.GenelListele().Where(z => z.KategoriID == id).ToList().ForEach(x => AltKategoriler.Add(new SelectListItem
             {
                 Value = x.AltKategoriID.ToString(),
                 Text = x.AltKategoriAD
@@ -127,6 +129,17 @@ namespace eTicaretProjesi.Controllers
         {
             model.Kategoriler = kr.IDyeGoreBul(id);
             return View(model);
+        }
+
+        public ActionResult UrunListele()
+        {
+            UrunlerViewModel model = new UrunlerViewModel();
+            model.UrunlerList = ur.Listele();
+            return View(model);
+
+
+            //var model = ur.Listele();
+            //return View(model);
         }
 
 

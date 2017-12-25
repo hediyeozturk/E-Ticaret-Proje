@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eTicaretProjesi.ENT.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,5 +18,7 @@ namespace eTicaretProjesi.ENT.ViewModel
         public bool UrunTanitim { get; set; } = false;
         public bool GununUrunu { get; set; } = false;
         public string AltKategoriAd { get; set; }
+        public IEnumerable<Urunler> UrunlerList { get; set; }
+
     }
 }

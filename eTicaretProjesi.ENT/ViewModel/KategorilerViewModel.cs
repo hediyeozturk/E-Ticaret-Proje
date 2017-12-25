@@ -28,7 +28,6 @@ namespace eTicaretProjesi.ENT.ViewModel
             public IEnumerable<KategoriAlt> AltKategoriList { get; set; }
             public Kategoriler Kategoriler { get; set; }
             public IEnumerable<Kategoriler> KategoriList { get; set; }
-            
             public KategoriAlt AltK { get; set; }
         }
     }

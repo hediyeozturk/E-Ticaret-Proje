@@ -130,6 +130,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="Content\skdslider.css" />
     <Content Include="Content\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -258,6 +259,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Views\Shared\index.html" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -277,7 +279,6 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Shared\_LayoutPageMain.cshtml" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\Hesap\Uyelik.cshtml" />
@@ -291,6 +292,9 @@
     <Content Include="Views\Islemler\KategoriGuncelle.cshtml" />
     <Content Include="Views\Islemler\KategoriDetay.cshtml" />
     <Content Include="Views\Islemler\AltKategoriEkle.cshtml" />
+    <Content Include="Views\Shared\_LayoutPageMain.cshtml" />
+    <Content Include="Views\Islemler\UrunListeleex.cshtml" />
+    <Content Include="Views\Islemler\UrunListele.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
