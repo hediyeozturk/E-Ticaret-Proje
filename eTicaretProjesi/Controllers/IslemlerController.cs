@@ -141,11 +141,23 @@ namespace eTicaretProjesi.Controllers
             //var model = ur.Listele();
             //return View(model);
         }
-
-
+        [HttpGet]
         public ActionResult UrunEkle()
         {
             return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult UrunEkle(UrunlerViewModel model)
+        {
+            Urunler urun = new Urunler();
+            urun.UrunAD = model.UrunAD;
+            urun.UrunFiyat = model.UrunFiyat;
+            urun.UrunTanitim = model.UrunTanitim;
+            urun.UrunAciklama = model.UrunAciklama;
+            urun.GununUrunu = model.GununUrunu;
+            return RedirectToAction("UrunListele");
         }
 
     }
